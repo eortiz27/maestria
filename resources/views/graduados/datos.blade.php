@@ -14,7 +14,7 @@
                    <div class="table-responsive">
                        <table class="table table-striped table-bordered">
                            <thead>
-                               <tr>
+                               <tr> 
 {{--                                     <th>matri_fec</th>
                                     <th>fac_nom</th>
                                     <th>carr_prog</th>
