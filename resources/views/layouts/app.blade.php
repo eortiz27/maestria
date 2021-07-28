@@ -40,12 +40,12 @@
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Graduados
+                                    Clientes
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('graduados.datos') }}">Datos</a>
+                                    <a class="dropdown-item" href="{{ route('clientes.datos') }}">Datos</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="{{ route('graduados.importar') }}">Importar</a>
+                                    <a class="dropdown-item" href="{{ route('clientes.importar') }}">Importar</a>
                                 </div>
                             </li>
 

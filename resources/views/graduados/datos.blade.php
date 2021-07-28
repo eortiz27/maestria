@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                	Graduados
+                	Clientes
                 </div>
 
                 <div class="card-body">
@@ -44,21 +44,21 @@
                                </tr>
                            </thead>
                            <tbody>
-                               @foreach($graduados as $key => $graduado)
+                               @foreach($clientes as $key => $cliente)
                                     <tr>
                                         <td>{{ $key+1 }}</td>
-                                        <td>{{ $graduado->matri_fec }}</td>
-                                        <td>{{ $graduado->fac_nom }}</td>
-                                        <td>{{ $graduado->carr_prog }}</td>
-                                        <td>{{ $graduado->egres_fec }}</td>
-                                        <td>{{ $graduado->apepat }}</td>
-                                        <td>{{ $graduado->apemat }}</td>
-                                        <td>{{ $graduado->nombre }}</td>
-                                        <td>{{ $graduado->sexo }}</td>
-                                        <td>{{ $graduado->docu_num }}</td>
-                                        <td>{{ $graduado->den_grad }}</td>
-                                        <td>{{ $graduado->prog_estu }}</td>
-                                        <td>{{ $graduado->mod_est }}</td>
+                                        <td>{{ $cliente->matri_fec }}</td>
+                                        <td>{{ $cliente->fac_nom }}</td>
+                                        <td>{{ $cliente->carr_prog }}</td>
+                                        <td>{{ $cliente->egres_fec }}</td>
+                                        <td>{{ $cliente->apepat }}</td>
+                                        <td>{{ $cliente->apemat }}</td>
+                                        <td>{{ $cliente->nombre }}</td>
+                                        <td>{{ $cliente->sexo }}</td>
+                                        <td>{{ $cliente->docu_num }}</td>
+                                        <td>{{ $cliente->den_grad }}</td>
+                                        <td>{{ $cliente->prog_estu }}</td>
+                                        <td>{{ $cliente->mod_est }}</td>
                                     </tr>
                                @endforeach
                            </tbody>

@@ -1,31 +1,31 @@
 <?php
 
-namespace App\Http\Controllers\Graduados;
+namespace App\Http\Controllers\Clientes;
 use Excel;
-use App\Imports\GraduadosImport;
-use App\Models\Graduado;
+use App\Imports\ClientesImport;
+use App\Models\Cliente;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class GraduadosController extends Controller
+class ClientesController extends Controller
 {
     public function datos()
     {
-    	$graduados = Graduado::get();
+    	$clientes = Cliente::get();
 
-    	return view('graduados.datos', compact('graduados'));
+    	return view('clientes.datos', compact('clientes'));
     }
 
     public function importar()
     {
-        return view('graduados.importar');
+        return view('clientes.importar');
     }
 
     public function importarGuardar(Request $request)
     {
         if( $request->hasFile('archivo'));
         {
-            Excel::import(new GraduadosImport, $request->file('archivo'));
+            Excel::import(new ClientesImport, $request->file('archivo'));
             return 'ok';
          }
     }

@@ -2,10 +2,10 @@
 
 namespace App\Imports;
 
-use App\Models\Graduado;
+use App\Models\Cliente;
 use Maatwebsite\Excel\Concerns\{ToModel,WithHeadingRow};
 
-class GraduadosImport implements ToModel,WithHeadingRow
+class ClientesImport implements ToModel,WithHeadingRow
 {
     /**
     * @param array $row
@@ -14,7 +14,7 @@ class GraduadosImport implements ToModel,WithHeadingRow
     */
     public function model(array $row)
     {
-        return new Graduado([
+        return new Cliente([
             'matri_fec'=> $row['matri_fec'],
             'fac_nom'=> $row['fac_nom'],
             'carr_prog'=> $row['carr_prog'],

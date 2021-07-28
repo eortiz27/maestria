@@ -6,12 +6,12 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    Importar Graduados
+                    Importar Clientes
                 </div>
 
                 <div class="card-body">
                     
-                    <form action="{{ route('graduados.importar.guardar') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('clientes.importar.guardar') }}" method="POST" enctype="multipart/form-data">
 
                         {{ csrf_field() }}
 

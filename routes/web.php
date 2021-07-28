@@ -28,17 +28,17 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Rutas creadas por mí
 Route::view('/archivo', 'archivo');
 
-//Route::view('/graduados/datos', 'graduados.datos')->name('graduados.datos');
-Route::get('/graduados/datos', 'Graduados\GraduadosController@datos')->name('graduados.datos');
+//Route::view('/clientes/datos', 'clientes.datos')->name('clientes.datos');
+Route::get('/clientes/datos', 'Clientes\ClientesController@datos')->name('clientes.datos');
 
-Route::get('/graduados/importar', 'Graduados\GraduadosController@importar')->name('graduados.importar');
+Route::get('/clientes/importar', 'Clientes\ClientesController@importar')->name('clientes.importar');
 
-Route::post('/graduados/importar/guardar', 'Graduados\GraduadosController@importarGuardar')->name('graduados.importar.guardar');
+Route::post('/clientes/importar/guardar', 'Clientes\ClientesController@importarGuardar')->name('clientes.importar.guardar');
 
 
 //Estadisticas
 Route::get('/estadisticas/grafico01','Estadisticas\EstadisticasController@grafico01')->name('estadisticas.grafico01');
 Route::get('/estadisticas/grafico02','Estadisticas\EstadisticasController@grafico02')->name('estadisticas.grafico02');
 
-//ApiGraduados
-Route::get('/api/graduados', 'ApiGraduados\ApiGraduadosController@graduados');
+//ApiClientes
+Route::get('/api/clientes', 'ApiClientes\ApiClientesController@clientes');

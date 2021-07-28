@@ -1,24 +1,24 @@
 <?php
 
-namespace App\Http\Controllers\ApiGraduados;
+namespace App\Http\Controllers\ApiClientes;
 
-use App\Models\Graduado;
-use App\Http\Resources\Graduado as GraduadoResource;
+use App\Models\Cliente;
+use App\Http\Resources\Cliente as ClienteResource;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class ApiGraduadosController extends Controller
+class ApiClientesController extends Controller
 {
-    public function graduados()
+    public function clientes()
     {
-        $graduados = Graduado::where('fac_nom', 'FACULTAD DE DERECHO Y CIENCIAS POLITICAS')->get();
-       //dd($graduados);
-       //return response()->json(['graduados' => $graduados]); // completar
+        $clientes = Cliente::where('fac_nom', 'FACULTAD DE DERECHO Y CIENCIAS POLITICAS')->get();
+       //dd($clientes);
+       //return response()->json(['clientes' => $clientes]); // completar
 
-       //return GraduadoResource::collection($graduados);
-       //return GraduadoResource::collection(Graduado::get()); //Funcional
+       //return ClienteResource::collection($clientes);
+       //return ClienteResource::collection(Cliente::get()); //Funcional
        
        
-       return GraduadoResource::collection($graduados);
+       return ClienteResource::collection($clientes);
     }
 }
