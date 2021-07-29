@@ -39,6 +39,9 @@ Route::post('/clientes/importar/guardar', 'Clientes\ClientesController@importarG
 //Estadisticas
 Route::get('/estadisticas/grafico01','Estadisticas\EstadisticasController@grafico01')->name('estadisticas.grafico01');
 Route::get('/estadisticas/grafico02','Estadisticas\EstadisticasController@grafico02')->name('estadisticas.grafico02');
+Route::get('/estadisticas/grafico03','Estadisticas\EstadisticasController@grafico03')->name('estadisticas.grafico03');
+Route::get('/estadisticas/grafico04','Estadisticas\EstadisticasController@grafico04')->name('estadisticas.grafico04');
+Route::get('/estadisticas/grafico05','Estadisticas\EstadisticasController@grafico05')->name('estadisticas.grafico05');
 
 //ApiClientes
-Route::get('/api/clientes', 'ApiClientes\ApiClientesController@clientes');
+Route::get('/api/clientes', 'ApiClientes\ApiClientesController@clientes'); 

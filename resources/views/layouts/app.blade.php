@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Maestria
+                    WiEstate
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -57,6 +57,12 @@
                                     <a class="dropdown-item" href="{{ route('estadisticas.grafico01') }}">Grafico 01</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="{{ route('estadisticas.grafico02') }}">Grafico 02</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="{{ route('estadisticas.grafico03') }}">Grafico 03</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="{{ route('estadisticas.grafico04') }}">Grafico 04</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="{{ route('estadisticas.grafico05') }}">Grafico 05</a>
                                 </div>
                             </li>
                             

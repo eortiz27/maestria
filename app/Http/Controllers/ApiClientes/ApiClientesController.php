@@ -11,7 +11,7 @@ class ApiClientesController extends Controller
 {
     public function clientes()
     {
-        $clientes = Cliente::where('fac_nom', 'FACULTAD DE DERECHO Y CIENCIAS POLITICAS')->get();
+        $clientes = Cliente::where('w_nombre', 'FACULTAD DE DERECHO Y CIENCIAS POLITICAS')->get();
        //dd($clientes);
        //return response()->json(['clientes' => $clientes]); // completar
 

@@ -17,10 +17,10 @@ class Cliente extends JsonResource
        // return parent::toArray($request);
        return [
 
-            'fact_nom' => $this->fac_nom,
-            'apepat' => $this->apepat,
-            'nombre' => $this->nombre,
-            'docu_num' => $this->docu_num,
+            'fact_nom' => $this->w_nombre,
+            'w_tiposangre' => $this->w_tiposangre,
+            'w_correo' => $this->w_correo,
+            'w_ocupacion' => $this->w_ocupacion,
        ];
     }
 }

@@ -7,26 +7,26 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                           Reporte de cliente por tipo de sangre
+                           Reporte de clientes por país
 
                         </div>
                        
                         <div class="card-body">
-                            A+  : {{$apositivo}}
+                            Peru: {{$per}}
                             <br>
-                            A-  : {{$anegativo}}
+                            Brasil: {{$bra}}
                             <br>
-                            B+  : {{$bpositivo}}
+                            EEUU: {{$us}}
                             <br>
-                            B-  : {{$bnegativo}}
+                            Reino Unido: {{$uk}}
                             <br>
-                            O+  : {{$opositivo}}
+                            España: {{$es}}
                             <br>
-                            O-  : {{$onegativo}}
+                            Argentina: {{$arg}}
                             <br>
-                            AB+ : {{$abpositivo}}
+                            Colombia: {{$col}}
                             <br>
-                            AB- : {{$abnegativo}}
+                            Venezuela: {{$ven}}
 
                         </div>
 
@@ -45,16 +45,16 @@ var ctx = document.getElementById('myChart').getContext('2d');
         
 var chart = new Chart(ctx, {
 
-type: 'polarArea',
+type: 'bar',
 
 data: {
 
-            labels: ['A+', 'A-', 'B+', 'B-', 'O+', 'O+', 'AB+', 'AB-'],
+            labels: ['Perú', 'Brasil', 'EEUU', 'Reino Unido', 'España', 'Argentina', 'Colombia', 'Venezuela'],
 
             datasets: [{
 
-                label: 'N° de egresados por facultades',
-                data: [ {{$apositivo}},  {{$anegativo}}, {{$bpositivo}}, {{$bnegativo}}, {{$opositivo}}, {{$onegativo}}, {{$abpositivo}}, {{$abnegativo}}  ],
+                label: 'N° de clientes por pais',
+                data: [ {{ $per }},  {{ $bra }}, {{ $us }}, {{ $uk }}, {{ $es }}, {{ $arg }}, {{ $col }}, {{ $ven }} ],
 
                 backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',

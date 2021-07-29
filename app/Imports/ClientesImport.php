@@ -15,18 +15,18 @@ class ClientesImport implements ToModel,WithHeadingRow
     public function model(array $row)
     {
         return new Cliente([
-            'matri_fec'=> $row['matri_fec'],
-            'fac_nom'=> $row['fac_nom'],
-            'carr_prog'=> $row['carr_prog'],
-            'egres_fec'=> $row['egres_fec'],
-            'apepat'=> $row['apepat'],
-            'apemat'=> $row['apemat'],
-            'nombre'=> $row['nombre'],
-            'sexo'=> $row['sexo'],
-            'docu_num'=> $row['docu_num'],
-            'den_grad'=> $row['den_grad'],
-            'prog_estu'=> $row['prog_estu'],
-            'mod_est'=> $row['mod_est'],
+            'w_apellido'=> $row['w_apellido'],
+            'w_nombre'=> $row['w_nombre'],
+            'w_edad'=> $row['w_edad'],
+            'w_genero'=> $row['w_genero'],
+            'w_tiposangre'=> $row['w_tiposangre'],
+            'w_telefono'=> $row['w_telefono'],
+            'w_correo'=> $row['w_correo'],
+            'w_zodiaco'=> $row['w_zodiaco'],
+            'w_ocupacion'=> $row['w_ocupacion'],
+            'w_pais'=> $row['w_pais'],
+            'w_tarjeta'=> $row['w_tarjeta'],
+            'w_saldo'=> $row['w_saldo'],
 
         ]);
     }
@@ -34,18 +34,18 @@ class ClientesImport implements ToModel,WithHeadingRow
     public function rules(): array
     {
         return[
-           'matri_fec'=> 'nullable',
-            'fac_nom'=> 'nullable',
-            'carr_prog'=> 'nullable',
-            'egres_fec'=> 'nullable',
-            'apepat'=> 'nullable',
-            'apemat'=> 'nullable',
-            'nombre'=> 'nullable',
-            'sexo'=> 'nullable',
-            'docu_num'=> 'nullable',
-            'den_grad'=> 'nullable',
-            'prog_estu'=> 'nullable',
-            'mod_est'=> 'nullable',  
+           'w_apellido'=> 'nullable',
+            'w_nombre'=> 'nullable',
+            'w_edad'=> 'nullable',
+            'w_genero'=> 'nullable',
+            'w_tiposangre'=> 'nullable',
+            'w_telefono'=> 'nullable',
+            'w_correo'=> 'nullable',
+            'w_zodiaco'=> 'nullable',
+            'w_ocupacion'=> 'nullable',
+            'w_pais'=> 'nullable',
+            'w_tarjeta'=> 'nullable',
+            'w_saldo'=> 'nullable',  
         ];
     }
 }

@@ -7,14 +7,16 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                           Reporte de clientes por género
+                        Reporte de signos
 
                         </div>
                        
                         <div class="card-body">
-                        Masculino: {{$masculino}} 
-                            <br>
-                        Femenino: {{$femenino}}
+                        Aries: {{$aries}} 
+                        <br>
+                        Tauro: {{$tauro}}
+                        <br>
+                        Geminis: {{$geminis}}
                         </div>
 
                         <div class="class-body">
@@ -31,28 +33,34 @@
         
         var chart = new Chart(ctx, {
 
-        type: 'doughnut',
+        type: 'radar',
 
         data: {
 
-            labels: ['Masculino', 'Femenino'],
+            labels: ['aries', 'tauro', 'geminis'],
 
             datasets: [{
 
-                label: 'N° de Clientes por Género',
-                data: [ {{$masculino}},  {{$femenino}}], 
+                label: 'Reporte varones',
+                data: [ {{$aries}},  {{$tauro}}, {{$geminis}}], 
+                fill: true, //agregado
                 backgroundColor: [
                     'rgb(60, 179, 113)',
-                    'rgb(106, 90, 205)',
+                    
                 ],
 
-                borderColor: [
-                    'rgb(255, 99, 132, 1)',
-                    'rgb(54, 162, 235, 1)'
+                
+                }, //agregado
+
+                { //agregado 
+                label: 'Reporte de mujeres',
+                data: [ {{$leo}},  {{$virgo}}, {{$scorpio}}], 
+                fill: true,
+
+                backgroundColor: [
+                    'rgb(255, 99, 132, 0.2)',
+                   
                 ],
-
-                borderWidth: 0
-
                 
             }]
         }

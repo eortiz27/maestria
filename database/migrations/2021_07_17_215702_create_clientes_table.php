@@ -15,18 +15,18 @@ class CreateClientesTable extends Migration
     {
         Schema::create('clientes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->date('matri_fec')->nullable();
-            $table->string('fac_nom')->nullable();
-            $table->string('carr_prog')->nullable();
-            $table->date('egres_fec')->nullable();
-            $table->string('apepat')->nullable();
-            $table->string('apemat')->nullable();
-            $table->string('nombre')->nullable();
-            $table->string('sexo')->nullable();
-            $table->string('docu_num')->nullable();
-            $table->string('den_grad')->nullable();
-            $table->string('prog_estu')->nullable();
-            $table->string('mod_est')->nullable();
+            $table->string('w_apellido')->nullable();
+            $table->string('w_nombre')->nullable();
+            $table->integer('w_edad')->nullable();
+            $table->string('w_genero')->nullable();
+            $table->string('w_tiposangre')->nullable();
+            $table->string('w_telefono')->nullable();
+            $table->string('w_correo')->nullable();
+            $table->string('w_zodiaco')->nullable();
+            $table->string('w_ocupacion')->nullable();
+            $table->string('w_pais')->nullable();
+            $table->string('w_tarjeta')->nullable();
+            $table->double('w_saldo')->nullable();
             $table->timestamps();
         });
     }

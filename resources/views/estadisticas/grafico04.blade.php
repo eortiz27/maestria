@@ -7,14 +7,16 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                           Reporte de clientes por género
+                        Reporte de edades
 
                         </div>
                        
                         <div class="card-body">
-                        Masculino: {{$masculino}} 
-                            <br>
-                        Femenino: {{$femenino}}
+                        Máximo: {{$max}} 
+                        <br>
+                        Mínimo: {{$min}}
+                        <br>
+                        Promedio: {{$prom}}
                         </div>
 
                         <div class="class-body">
@@ -31,16 +33,17 @@
         
         var chart = new Chart(ctx, {
 
-        type: 'doughnut',
+        type: 'radar',
 
         data: {
 
-            labels: ['Masculino', 'Femenino'],
+            labels: ['Maximo', 'Minimo', 'Promedio'],
 
             datasets: [{
 
-                label: 'N° de Clientes por Género',
-                data: [ {{$masculino}},  {{$femenino}}], 
+                label: 'Reporte de edades',
+                data: [ {{$max}},  {{$min}}, {{$prom}}], 
+               
                 backgroundColor: [
                     'rgb(60, 179, 113)',
                     'rgb(106, 90, 205)',
@@ -60,3 +63,4 @@
 
     </script>
 @endsection
+
