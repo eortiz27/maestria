@@ -82,15 +82,20 @@
             <div class="content">
                 <img src="https://3.bp.blogspot.com/-2IQXWwprOGU/XL99j6VJBsI/AAAAAAABO5s/KYyzMgxykaEb3uuKLSZGZnYsHll8vRcYwCLcBGAs/s1600/universidad-de-huanuco-logo.jpg" alt="">
                 <div class="title m-b-md">
-                      Curso de Ciencia de Datos 
+                      <b>Curso de Ciencia de Datos </b>
                 </div>
-                <div class="h1" style="color: #030307; font-size: 20pt"><b>Docente:</b></div>
-                <div class="h1" style="color: #1e137e; font-size: 16">Freddy Clayderman Virgilio Arratea</div>
+                <div class="h1" style="color: #474749; font-size: 20pt"><b>Docente:</b></div>
+                <div class="h1" style="color: #030307; font-size: 16">- Freddy Clayderman Virgilio Arratea</div>
                 <br>
-                <div class="h1" style="color: #1e137e; font-size: 20pt">Integrantes:</div>
-                <div class="h1" style="color: #1e137e; font-size: 16">Einstein Arnold Ortiz Morales</div>
-                <div class="h1" style="color: #1e137e; font-size: 16">Elkin Fausto Ortiz Morales</div>
+                <div class="h1" style="color: #474749; font-size: 20pt"><b>Integrantes:</b></div>
+                <div class="h1" style="color: #030307; font-size: 16">- Einstein Arnold Ortiz Morales</div>
+                <div class="h1" style="color: #030307; font-size: 16">- Elkin Fausto Ortiz Morales</div>
             </div>
         </div>
+
+        
+        {{-- Particulas --}}
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
     </body>
 </html>

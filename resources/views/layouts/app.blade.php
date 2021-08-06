@@ -22,9 +22,9 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-danger shadow-sm h5">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand font-weight-bold h4" href="{{ url('/') }}">
                     WiEstate
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -38,18 +38,18 @@
 
                          @if(Auth::check())
 
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown font-weight-bold h4">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Clientes
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu h4" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('clientes.datos') }}">Datos</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="{{ route('clientes.importar') }}">Importar</a>
                                 </div>
                             </li>
 
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown font-weight-bold h4">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Estadisticas
                                 </a>
@@ -63,6 +63,16 @@
                                     <a class="dropdown-item" href="{{ route('estadisticas.grafico04') }}">Grafico 04</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="{{ route('estadisticas.grafico05') }}">Grafico 05</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown font-weight-bold h4">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>APIs</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="/api/clientes">API 1</a>
+                                
                                 </div>
                             </li>
                             

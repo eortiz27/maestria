@@ -15,18 +15,7 @@
                        <table class="table table-striped table-bordered">
                            <thead>
                                <tr> 
-{{--                                     <th>w_apellido</th>
-                                    <th>w_nombre</th>
-                                    <th>w_edad</th>
-                                    <th>w_genero</th>
-                                    <th>w_tiposangre</th>
-                                    <th>w_telefono</th>
-                                    <th>w_correo</th>
-                                    <th>w_zodiaco</th>
-                                    <th>w_ocupacion</th>
-                                    <th>w_pais</th>
-                                    <th>w_tarjeta</th>
-                                    <th>w_saldo</th> --}}
+
                                     <th>N°</th>
                                     <th>Apellido</th>
                                     <th>Nombre</th>
