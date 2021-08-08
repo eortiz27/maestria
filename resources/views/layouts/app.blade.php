@@ -16,6 +16,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -25,7 +26,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-danger shadow-sm h5">
             <div class="container">
                 <a class="navbar-brand font-weight-bold h4" href="{{ url('/') }}">
-                    WiEstate
+                    <i class="fas fa-building"></i>  WiEstate
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -39,8 +40,8 @@
                          @if(Auth::check())
 
                             <li class="nav-item dropdown font-weight-bold h4">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Clientes
+                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-users"></i> Clientes
                                 </a>
                                 <div class="dropdown-menu h4" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('clientes.datos') }}">Datos</a>
@@ -51,7 +52,7 @@
 
                             <li class="nav-item dropdown font-weight-bold h4">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Estadisticas
+                                    <i class="fas fa-chart-bar"></i> Estadisticas
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('estadisticas.grafico01') }}">Grafico 01</a>
@@ -68,7 +69,7 @@
 
                             <li class="nav-item dropdown font-weight-bold h4">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <b>APIs</b>
+                                    <i class="fab fa-aws"></i>  <b>APIs</b>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/api/clientes">API 1</a>

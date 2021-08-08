@@ -68,12 +68,12 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Inicio</a>
+                        <a href="{{ url('/home') }}"><i class="fas fa-home"></i>Inicio</a>
                     @else
-                        <a href="{{ route('login') }}">Acceder</a>
+                        <a href="{{ route('login') }}"><i class="fas fa-users-cog"></i>Acceder</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Registrarse</a>
+                            <a href="{{ route('register') }}"><i class="fas fa-id-card"></i>Registrarse</a>
                         @endif
                     @endauth
                 </div>
@@ -81,6 +81,7 @@
 
             <div class="content">
                 <img src="https://3.bp.blogspot.com/-2IQXWwprOGU/XL99j6VJBsI/AAAAAAABO5s/KYyzMgxykaEb3uuKLSZGZnYsHll8vRcYwCLcBGAs/s1600/universidad-de-huanuco-logo.jpg" alt="">
+                
                 <div class="title m-b-md">
                       <b>Curso de Ciencia de Datos </b>
                 </div>
